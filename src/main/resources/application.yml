@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-boot-openfeign
+
+  cloud:
+    openfeign:
+      client:
+        config:
+          customerClient:
+            dismiss404: true # Return Optional.empty instead of throw Feign Exception in case of getting HTTP 404
+
+client:
+  customer:
+    name: customerClient # Must match with above Spring OpenFeign config
+    url: http://localhost:8080
