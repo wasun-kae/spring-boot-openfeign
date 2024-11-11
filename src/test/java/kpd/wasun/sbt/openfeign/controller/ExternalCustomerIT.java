@@ -38,7 +38,6 @@ public class ExternalCustomerIT {
                         }
                         """, true
                 ));
-
     }
 
     @Test
